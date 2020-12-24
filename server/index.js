@@ -14,7 +14,7 @@ const server = http.createServer(app);
 //Create an instance of socket io
 const io = socketio(server,{
     cors:{
-        origin:"http://localhost:3000",
+        origin:"https://5fe4371e93c2ccd704f5486c--groot-chat-app.netlify.app",
         methods:["GET","POST"]
     }
 });
