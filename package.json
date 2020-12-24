@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "backend for realtime chat bot",
+  "main": "index.js",
+  "engine":{
+    "node":"14.15.1",
+    "npm":"6.14.8"
+  },
+  "scripts": {
+    "start" : "nodemon server/index.js",
+    "backend": "nodemon server/index.js",
+    "frontend": "npm run start --prefix client",
+    "dev" : "concurrently \" npm run backend \" \"npm run start --prefix client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React",
+    "Hooks",
+    "Node",
+    "Sockets.io",
+    "Chat"
+  ],
+  "author": "Sai Lakshmy",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "socket.io": "^3.0.4"
+  }
+}
